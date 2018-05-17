@@ -1,7 +1,9 @@
 # DESAFIOREDEHOST
+
 Projeto Ansible para testar conhecimentos.
 
 # Período para realização do projeto:
+
 Entre os dias 11 e 17 de maio de 2018.
 
 # Escopo do projeto:
@@ -32,6 +34,7 @@ Período: dias 16 e 17
 - Enviar por email para o solicitante.
 
 # INFRAESTRUTURA UTILIZADA:
+
 Para o ambiente de teste foram utilizados:
 
 Hardware: Notebook Asus Celeron 8gb ram, 500hd.
@@ -58,8 +61,9 @@ Para servir como DB Server.
 
 # TECNOLOGIAS SOLICITADAS:
 
->> ANSIBLE
-Ansible é uma plataforma de automação simples de usar, robusta e totalmente de código aberto. 
+<h2>ANSIBLE</h2>
+
+>> Ansible é uma plataforma de automação simples de usar, robusta e totalmente de código aberto. 
 Devido a sua facilidade de entendimento mas complexidade da sua capacidade em seu uso é amplamente utilizada e estudada
 Possui farto material de estudos e exemplos.
 Para este projeto vamos utilizar o repositório como base:
@@ -71,10 +75,10 @@ https://github.com/ansible/ansible-examples/tree/master/lamp_simple_rhel7
 
 Alguns erro foram identificados no projeto oficial, principalmente relativo ao mysql, mas todos foram sanados.
 
-MYSQL E PHP
+<h2>MYSQL E PHP</h2>
 Devido a familiaridade e entender que possui um código mais estável e ainda assim ser um Mysql, optei por usar o MariaDB como Mysql deste projeto.
 
-Apache
+<h2>Apache</h2>
 O sistema operacional utilizado foi o Centos 7, por compatibilidade usamos o Apache em sua última versão (httpd).
 
 Sites com dns gratuito
@@ -90,7 +94,7 @@ Para melhor funcionamento, ambos estão configurados como virtualhosts no Apache
 
 # RESULTADO FINAL:
 
-ANSIBLE
+<h2>ANSIBLE</h2>
 Conforme solicitado foi criada a ansible-playbook: site.yml
 Estrutura:
 
@@ -122,11 +126,12 @@ ansible-playbook site.yml ou ansible-playbook site.yml -vvvvvv para melhor visua
 
 Todos os hosts possuem uma chave pública do host operador Ansible para facilitar o gerenciamento e podem ser acessadas pelo operador via ssh sem a necessidade de digitação da senha em todo o acesso, o que tornaria inviável a operação se fosse de outra maneira.
 
-APACHE, PHP E MYSQL
+<h2>APACHE, PHP E MYSQL</h2>
 Após isso, para complemento do projeto, foram feitos individualmente os sites solicitados.
 Para isso foi necessário modificar alguns parâmetros utilizados no script ansible que prevê somente um site.
 Foram adicionados como virtuais hosts e instalado a aplicação do responsável pelo redirecionamento gratuito de dns (noip).
 
+<h2>Centos</h2>
 Quanto ao sistema operacional, foi necessário também fazer a modificação do arquivo SELinux para melhor funcionamento do http com maquinas virtuais e acesso ao banco de dados em host remoto. SELinux foi configurado como "Permissive". Também foram modificados os dns dos servidores para o melhor funcionamento, atualização e acesso externo.
 
 Relativo ao banco de dados MariaDB, foi necessário remover do script a parte onde colocava opções customizadas de log e erro, devido a falha no software. No playbook final o erro já está corrigido, não utilizando configuração personalizada de log, pid e erros. Conforme bug reportado no github na versão mais atualizada.
