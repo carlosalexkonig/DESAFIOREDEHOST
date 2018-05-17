@@ -1,0 +1,212 @@
+    1  lvdisplay
+    2  vgdisplay
+    3  pvdisplay
+    4  top
+    5  vim /etc/resolv.conf 
+    6  vi /etc/resolv.conf 
+    7  hostname
+    8  vim /etc/networks
+    9  vim /etc/network
+   10  vi /etc/networks 
+   11  vi /etc/udev/rules.d/98-kexec.rules 
+   12  vim /etc/sysconfig/network-scripts/ifcfg-eth0
+   13  vi /etc/sysconfig/network-scripts/ifcfg-eth0
+   14  /etc/init.d/network restart
+   15  ifconfig
+   16  ifup eth0
+   17  ifconfig
+   18  fi
+   19  ip -s link
+   20  ip link
+   21  yum provides ifconfig
+   22  ifconfig
+   23  /sbin/ifcfg 
+   24  yum search ifconfig
+   25  yum install net-tools.x86_64
+   26  ifconfig
+   27  service network restart
+   28  ifconfig
+   29  reboot
+   30  ifconfig
+   31  ping google.com
+   32  ping redehost.com.br
+   33  yum search vim
+   34  yum install vim
+   35  vim /etc/sysconfig/network
+   36  cat /etc/resolv.conf 
+   37  vim /etc/hosts
+   38  lvdisplay
+   39  reboot
+   40  vim /etc/hostname 
+   41  reboot
+   42  ping google.com
+   43  ifconfig
+   44  lvdisplay
+   45  ll
+   46  ls
+   47  cd /
+   48  ll
+   49  cd /home/
+   50  ll
+   51  cd ..
+   52  ll
+   53  mount /dev/cdrom /media/
+   54  insmod
+   55  insmod /lib/modules/$(uname -r)/kernel/drivers/ata/ata_piix.ko
+   56  cd /tmp/
+   57  ll
+   58  mount /dev/cdrom /tmp/
+   59  cat /etc/udev/rules.d/98-kexec.rules 
+   60  mount /dev/cdrom /media/cdrom
+   61  mount /dev/cdrom /media
+   62  cp /etc/udev/rules.d/98-kexec.rules /root/
+   63  cd /root
+   64  ll
+   65  echo "" > /etc/udev/rules.d/98-kexec.rules 
+   66  insmod /lib/modules/$(uname -r)/kernel/drivers/ata/ata_piix.ko
+   67  mount /dev/cdrom /media/
+   68  cp /root/98-kexec.rules /etc/udev/rules.d/98-kexec.rules 
+   69  mount /dev/cdrom /mnt/cdr
+   70  mount /dev/cdrom /mnt/cdrom
+   71  mkdir /mnt/cdrom
+   72  mount /dev/cdrom /mnt/cdrom
+   73  rm /mnt/cdrom/ -rf
+   74  yum search openssh-server
+   75  yum install openssh-server
+   76  vim /etc/ssh/ssh_config 
+   77  service sshd restart
+   78  locate ssh
+   79  yum install locate
+   80  yum search utils
+   81  find / -name ssh
+   82  service sshd restart
+   83  .ifconfig
+   84  vim /etc/ssh/sshd_config 
+   85  vim /etc/ssh/ssh_config 
+   86  vim /etc/ssh/sshd_config 
+   87  service sshd restart
+   88  netstat -ntlp
+   89  chkconfig sshd on
+   90  yum search vmware-distrib
+   91  yum search vmware-tools-distrib
+   92  ls mount-point
+   93  /etc/udev/rules.d/70-persistent-cd.rules
+   94  vim /etc/udev/rules.d/70-persistent-cd.rules
+   95  reboot
+   96  yum update
+   97  reboot
+   98  ll
+   99  rm 98-kexec.rules 
+  100  ll
+  101  mount /dev/cdrom /media/
+  102  mkdir /mnt/iso
+  103  mount -t iso9660 /dev/cdrom /mnt/iso/
+  104  ll /mnt/iso/
+  105  insmod /lib/modules/$(uname -r)/kernel/drivers/ata/ata_pii
+  106  mount -t iso9660 /dev/cdrom /mnt/
+  107  mount -t iso9660 /dev/cdrom /media/
+  108  ll /media/
+  109  rm /mnt/iso/ -rf
+  110  cat /dev/sr0
+  111  cat /dev/cdrom 
+  112  mount
+  113  cat /etc/fstab 
+  114  vim /etc/fstab 
+  115  cd /boot/efi/EFI/
+  116  ll
+  117  ll BOOT/
+  118  cd /
+  119  vim /etc/fstab 
+  120  mount /dev/sr0 /media/
+  121  mount /dev/sr1 /media/
+  122  cat /etc/redhat-release 
+  123  cd /media/RHEL71/
+  124  ll
+  125  ./install.sh 
+  126  rpm -qa | microsoft
+  127  rpm -qa | grep microsoft
+  128  cd /
+  129  umount /media/
+  130  ll /media/
+  131  shutdown -h now
+  132  service network status
+  133  ifconfig
+  134  reboot
+  135  rpm -qa | grep microsoft
+  136  cat /etc/redhat-release 
+  137  vim /etc/hosts
+  138  service network stop
+  139  ifconfig
+  140  vim /etc/sysconfig/network-scripts/ifcfg-eth0 
+  141  reboot
+  142  df -h
+  143  ifconfig
+  144  df -h
+  145  pvscan 
+  146  lvdisplay 
+  147  fdisk -l /dev/sda
+  148  free -m
+  149  top
+  150  cd /etc/systemd/
+  151  ls
+  152  cd system
+  153  ll
+  154  cd /root/
+  155  ll
+  156  cd /
+  157  ll
+  158  vim /etc/init.d/netconfig
+  159  vim /etc/sysconfig/network-scripts/ifcfg-eth0 
+  160  service network restart
+  161  ifconfig
+  162  service sshd restart
+  163  reboot
+  164  vim /etc/init.d/netcon
+  165  vim /etc/init.d/netconfig 
+  166  chmod +x /etc/init.d/netconfig 
+  167  chkconfig netconfig on
+  168  chkconfig
+  169  vim /etc/init.d/netconfig 
+  170  ping 187.84.224.1
+  171  ping 187.84.224.1 -c 4 -q
+  172  vim /etc/init.d/netconfig 
+  173  vim /etc/sysconfig/network-scripts/ifcfg-eth0
+  174  ifconfig
+  175  chckonfig network on
+  176  chkonfig network on
+  177  chkconfig network on
+  178  service network start
+  179  service network restart
+  180  ifconfig
+  181  vim /etc/sysconfig/network-scripts/ifcfg-eth0 
+  182  service network restart
+  183  ifconfig
+  184  ll
+  185  service network restart
+  186  ifconfig
+  187  hostname
+  188  shutdown -h now
+  189  exit
+  190  yum update
+  191  ifconfig
+  192  iptables -L
+  193  yum clean all
+  194  yum update
+  195  vi /etc/resolv.conf 
+  196  vi /etc/sysconfig/network-scripts/
+  197  cd /etc/sysconfig/network-scripts/
+  198  ll
+  199  vim ifcfg-eth0 
+  200  ping google.com.br
+  201  ping centos.org
+  202  ping 8.8.8.8
+  203  yum update
+  204  exit
+  205  yum update -y
+  206  systemctl status mariadb
+  207  cat /var/log/mysql.log
+  208  vi /etc/selinux/config
+  209  reboot
+  210  yum remove mariadb
+  211  mysql -uroot
+  212  history >> history-centosmysql.txt
